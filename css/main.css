@@ -173,7 +173,13 @@ span.bold{
     h3{
         font-size: 20pt;
     }
+    span{
+        font-size: 20pt;
+    }
 }
+    .upload{
+        margin-top: 25%
+    }
 
 
 
