@@ -63,7 +63,6 @@ span.bold{
 .item{
     width: 33%;
     position: relative;
-    /* padding: 10px; */
     background-color: rgba(0, 0, 0, 0)
 }
 .info{
