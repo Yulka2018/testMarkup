@@ -50,9 +50,9 @@ span.bold{
     display: flex;
     align-items: center;
 }
-.datapicker label,
-input{
+#data1 {
     margin-right: 15px;
+    margin-left: 15px;
 }
 .Gallerey{
     display: flex;
@@ -100,20 +100,25 @@ input{
 .item > img{
     width: 100%;
 }
+img{
+    background-color: black;
+}
 .item:hover .info {
     transition: 0.2s ease; 
     opacity: 1;
 }
-
+.item:hover img{
+    opacity: 0.5;
+}
 .item:hover .video {
     transition: 0.2s ease; 
     opacity: 1;
 }
+
 .loadButton{
     display: flex;
    justify-content: center;
    align-items: center;
-   border-radius: 10px;
    min-height: 15vh;
 }
 .loadMore{
@@ -123,6 +128,47 @@ input{
     height: 30px;
     font-size: 12pt;
     background-color: aliceblue;
+}
+
+@media screen and (max-width: 1023px){
+    .item{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .item{
+        width: 100%;
+    }
+    .loadMore{
+        width: 40%; 
+        
+    }
+    .Profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo{
+        width: 100%;
+    }
+    .MainData{
+        width:100%;
+        min-height: 15vh;
+    }
+    .profileName{
+        justify-content: center;
+    }
+    .counts{
+        display: flex;
+        justify-content: center
+    }
+    .datapicker{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        font-size: 20pt;
+    }
 }
 
 
