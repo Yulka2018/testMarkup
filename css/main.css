@@ -63,7 +63,8 @@ span.bold{
 .item{
     width: 33%;
     position: relative;
-    padding: 10px;
+    /* padding: 10px; */
+    background-color: rgba(0, 0, 0, 0)
 }
 .info{
     position: absolute;
@@ -100,15 +101,17 @@ span.bold{
 .item > img{
     width: 100%;
 }
-img{
+.item:hover{
     background-color: black;
 }
 .item:hover .info {
     transition: 0.2s ease; 
     opacity: 1;
 }
+
 .item:hover img{
     opacity: 0.5;
+   
 }
 .item:hover .video {
     transition: 0.2s ease; 
